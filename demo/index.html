@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="demo"></div>
+
+  <script type="module">
+    import {
+      html,
+      render
+    } from 'lit';
+    import '../dist/src/DepartmentBoard.js';
+
+    const rkid = 161;
+
+    render(
+      html`<department-board .rkid=${rkid}/>`,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
