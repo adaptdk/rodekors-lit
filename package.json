@@ -1,6 +1,6 @@
 {
   "name": "rodekors-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Tom Helmer Hansen <tom@adaptagency.com>",
   "type": "module",
   "main": "DepartmentBoard.js",
