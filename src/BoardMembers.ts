@@ -18,25 +18,16 @@ export default class BoardMembers extends LitElement {
   static styles = css`
     a:link {
       color: inherit;
+      text-underline-offset: 4px;
     }
     a:visited {
       color: inherit;
     }
     .list {
-      display: flex;
-      flex-direction: column;
-      max-width: 900px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(26ch, 1fr));
       gap: 20px;
       padding: 20px;
-      @media (min-width: 550px) {
-        display: grid;
-        grid-auto-rows: 1fr;
-        grid-template-columns: repeat(2, 1fr);
-      }
-      @media (min-width: 800px) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-      }
     }
     .item {
       padding: 20px;
@@ -47,10 +38,13 @@ export default class BoardMembers extends LitElement {
     .header {
       text-transform: capitalize;
       font-weight: 700;
+      font-size: 16px;
       margin-bottom: 2px;
     }
     .value {
       margin-top: 10px;
+      font-size: 14px;
+      color: #4a4a4a;
     }
     .label {
       text-transform: capitalize;
