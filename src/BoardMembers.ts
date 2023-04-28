@@ -27,7 +27,6 @@ export default class BoardMembers extends LitElement {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(26ch, 1fr));
       gap: 20px;
-      padding: 20px;
     }
     .item {
       padding: 20px;
